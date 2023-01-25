@@ -15,7 +15,20 @@ public class MaxServiceTest {
 
         Assertions.assertEquals(expected, actual);
 
-
     }
+
+    @Test
+    public void shouldFindMaxifB() {
+        MaxService service = new MaxService();
+
+        int a = 12;
+        int b = 112;
+
+        int expected = b;
+        int actual = service.max(a, b);
+
+        Assertions.assertEquals(expected, actual);
+    }
+
 }
 
